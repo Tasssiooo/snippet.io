@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { withEmotionCache } from "@emotion/react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, SkipNavLink } from "@chakra-ui/react";
 import {
   Links,
   Meta,
@@ -8,7 +8,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { MetaFunction, LinksFunction } from "@remix-run/node"; // Depends on the runtime you choose
+import { MetaFunction, LinksFunction } from "@remix-run/node";
+
+import { ColorModeScript } from "@chakra-ui/react";
+import theme from "./theme/theme";
 
 import { ServerStyleContext, ClientStyleContext } from "./context";
 
@@ -80,9 +83,11 @@ const Document = withEmotionCache(
 export default function App() {
   return (
     <Document>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
+        <SkipNavLink id="snippet.io-skip-nav">Skip to content</SkipNavLink>
         <Outlet />
       </ChakraProvider>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     </Document>
   );
 }
