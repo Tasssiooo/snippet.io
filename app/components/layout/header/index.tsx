@@ -6,7 +6,7 @@ import Sign from "./components/sign";
 
 export default function Header() {
   return (
-    <Box pos="fixed" top="0" left="0" w="full">
+    <Box pos="fixed" top="0" left="0" w="full" zIndex="50">
       <Flex
         flexDir="row"
         justifyContent="space-between"
