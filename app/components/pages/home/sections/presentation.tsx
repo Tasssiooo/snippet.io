@@ -17,19 +17,18 @@ export default function Presentation() {
     <Grid
       templateColumns={{
         base: "repeat(1, max-content)",
-        md: "repeat(2, max-content)",
+        lg: "repeat(2, max-content)",
       }}
-      justifyItems="center"
-      alignContent="center"
+      placeItems="center"
       w="max-content"
       mx="auto"
       gridRowGap="7"
     >
       <GridItem display="flex" flexDir="column" justifyContent="center">
-        <Flex flexDir="column" justifyContent="center" w={[380, 576]} maxW="xl">
+        <Flex flexDir="column" justifyContent="center">
           <Heading
             as="h1"
-            fontSize={["5xl", "6xl"]}
+            fontSize={{ base: "5xl", xl: "6xl" }}
             lineHeight="2"
             color="primary.100"
             bgGradient="linear(145deg, primary.100 0%, primary.400 25%, primary.700 50%, primary.900 75%)"
@@ -37,7 +36,11 @@ export default function Presentation() {
           >
             Snippet.io
           </Heading>
-          <Text fontSize={["sm", "md"]} color="whiteAlpha.700">
+          <Text
+            w={{ base: "sm", sm: "md", md: "xl", lg: "md", xl: "xl" }}
+            fontSize={{ base: "sm", xl: "md" }}
+            color="whiteAlpha.700"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex
             harum a explicabo delectus, nihil optio consequatur, numquam
             nesciunt dignissimos maiores dolorum animi, magni dicta ea. Dolorum
@@ -54,7 +57,13 @@ export default function Presentation() {
         </Flex>
       </GridItem>
       <GridItem>
-        <Img src={image} w={[383, 683]} h={[295, 495]} alt="" />
+        <Img
+          src={image}
+          w={{ base: "100%", md: "100%", lg: "523px", xl: "683px" }}
+          h={{ base: "298px", md: "495px", lg: "397px", xl: "519px" }}
+          objectFit="cover"
+          alt=""
+        />
       </GridItem>
     </Grid>
   );

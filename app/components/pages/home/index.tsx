@@ -12,7 +12,7 @@ export default function HomeView() {
       maxW="8xl"
       minH="100vh"
       mx="auto"
-      px="8"
+      px={{ base: "2", xl: "5" }}
     >
       <SkipNavContent id="snippet.io-skip-nav" />
       {/* Sections */}
