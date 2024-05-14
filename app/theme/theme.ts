@@ -8,6 +8,16 @@ const config: ThemeConfig = {
 };
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        bgColor: "#fff",
+        _dark: {
+          bgColor: "#0c0a09",
+        },
+      },
+    },
+  },
   components: {
     Button,
   },

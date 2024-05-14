@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import Header from "~/components/layout/header";
+import HomeView from "~/components/pages/home";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <HomeView />
     </>
   );
 }
