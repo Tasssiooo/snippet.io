@@ -22,6 +22,13 @@ const theme = extendTheme({
         bg: props.colorMode === "light" ? "hsl(0 0% 100%)" : "hsl(0 0% 3.9%)",
         color: props.colorMode === "light" ? "hsl(0 0% 3.9%)" : "hsl(0 0% 98%)",
       },
+      p: {
+        lineHeight: "1.75",
+        "&:not(:first-child)": {
+          mt: "6",
+        },
+        fontSize: { base: "sm", xl: "md" },
+      },
     }),
   },
   components: {

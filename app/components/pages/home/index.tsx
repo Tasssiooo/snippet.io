@@ -1,6 +1,7 @@
 import { Box, SkipNavContent } from "@chakra-ui/react";
 
-import Presentation from "./sections/presentation";
+import Hero from "./sections/hero";
+import Customization from "./sections/customization";
 
 export default function HomeView() {
   return (
@@ -11,12 +12,14 @@ export default function HomeView() {
       w="full"
       maxW="8xl"
       minH="100vh"
+      overflow="hidden"
       mx="auto"
       px={{ base: "2", xl: "5" }}
     >
       <SkipNavContent id="snippet.io-skip-nav" />
       {/* Sections */}
-      <Presentation />
+      <Hero />
+      <Customization />
     </Box>
   );
 }
