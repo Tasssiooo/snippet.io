@@ -3,7 +3,6 @@ import {
   Button,
   Flex,
   Link,
-  LinkOverlay,
   Menu,
   MenuButton,
   MenuItem,
@@ -16,7 +15,7 @@ import { Icon } from "@iconify-icon/react";
 
 export default function Nav() {
   return (
-    <Flex as="nav" flexDir="row" columnGap="2">
+    <Box as="nav" display={{ base: "none", lg: "block" }}>
       <Flex
         as="ul"
         flexDir="row"
@@ -41,10 +40,8 @@ export default function Nav() {
             >
               About
             </MenuButton>
-            <MenuList px="2" fontSize="sm">
+            <MenuList>
               <MenuItem
-                rounded="md"
-                fontWeight="600"
                 icon={
                   <Icon icon="ri:information-2-line" width={24} height={24} />
                 }
@@ -57,8 +54,6 @@ export default function Nav() {
                 href="https://gist.github.com/discover"
                 icon={<Icon icon="ri:github-fill" width={24} height={24} />}
                 isExternal
-                rounded="md"
-                fontWeight="600"
                 iconSpacing="2"
               >
                 <Box
@@ -75,6 +70,6 @@ export default function Nav() {
           </Menu>
         </li>
       </Flex>
-    </Flex>
+    </Box>
   );
 }

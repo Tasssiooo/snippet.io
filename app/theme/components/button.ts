@@ -4,6 +4,7 @@ const Button = defineStyleConfig({
   variants: {
     solid: {
       bgColor: "primary.default",
+      color: "primary.foreground",
       _hover: {
         bgColor: "primary.800",
       },

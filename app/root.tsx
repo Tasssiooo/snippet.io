@@ -11,6 +11,7 @@ import {
 import { MetaFunction, LinksFunction } from "@remix-run/node";
 
 import { ColorModeScript } from "@chakra-ui/react";
+
 import theme from "./theme/theme";
 
 import { ServerStyleContext, ClientStyleContext } from "./context";
@@ -18,7 +19,6 @@ import { ServerStyleContext, ClientStyleContext } from "./context";
 export const meta: MetaFunction = () => {
   return [
     { charSet: "utf-8" },
-    { title: "New Remix App" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
   ];
 };

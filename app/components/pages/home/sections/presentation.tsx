@@ -39,7 +39,6 @@ export default function Presentation() {
           <Text
             w={{ base: "sm", sm: "md", md: "xl", lg: "md", xl: "xl" }}
             fontSize={{ base: "sm", xl: "md" }}
-            color="whiteAlpha.700"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex
             harum a explicabo delectus, nihil optio consequatur, numquam
