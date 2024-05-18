@@ -12,7 +12,7 @@ import { Link as ReactRouterLink } from "@remix-run/react";
 
 import image from "~/assets/images/three-codes.png";
 
-export default function Presentation() {
+export default function Hero() {
   return (
     <Grid
       templateColumns={{
