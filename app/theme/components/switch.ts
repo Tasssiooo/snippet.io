@@ -16,7 +16,7 @@ const Switch = helpers.defineMultiStyleConfig({
         bgPos: "center",
         _checked: {
           bgImage: `url(${moon})`,
-          bgColor: "background.dark",
+          bgColor: "background",
         },
       },
       track: {

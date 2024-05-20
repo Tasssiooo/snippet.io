@@ -1,8 +1,6 @@
-import {
-  extendTheme,
-  textDecoration,
-  type ThemeConfig,
-} from "@chakra-ui/react";
+import "./theme.css";
+
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 
 import Button from "./components/button";
 import Menu from "./components/menu";
@@ -17,10 +15,10 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
   styles: {
-    global: (props: any) => ({
+    global: {
       body: {
-        bg: props.colorMode === "light" ? "hsl(0 0% 100%)" : "hsl(0 0% 3.9%)",
-        color: props.colorMode === "light" ? "hsl(0 0% 3.9%)" : "hsl(0 0% 98%)",
+        bg: "hsl(var(--background))",
+        color: "hsl(var(--foreground))",
       },
       p: {
         lineHeight: "1.75",
@@ -29,7 +27,7 @@ const theme = extendTheme({
         },
         fontSize: { base: "sm", xl: "md" },
       },
-    }),
+    },
   },
   components: {
     Button,
@@ -39,13 +37,10 @@ const theme = extendTheme({
     Switch,
   },
   colors: {
-    background: {
-      light: "hsl(0 0% 100%)",
-      dark: "hsl(0 0% 3.9%)",
-    },
+    background: "hsl(var(--background))",
     primary: {
-      default: "#008170",
-      foreground: "#FAFAFA",
+      default: "hsl(var(--primary))",
+      foreground: "hsl(var(--primary-foreground))",
       100: "#5BFFE9",
       200: "#40FFE6",
       300: "#24FFE2",
@@ -57,54 +52,24 @@ const theme = extendTheme({
       900: "#008170",
     },
     card: {
-      default: {
-        light: "hsl(0 0% 100%)",
-        dark: "hsl(0 0% 3.9%)",
-      },
-      foreground: {
-        light: "hsl(0 0% 3.9%)",
-        dark: "hsl(0 0% 98%)",
-      },
+      default: "hsl(var(--card))",
+      foreground: "hsl(var(--card-foreground))",
     },
     popover: {
-      default: {
-        light: "hsl(0 0% 100%)",
-        dark: "hsl(0 0% 3.9%)",
-      },
-      foreground: {
-        light: "hsl(0 0% 3.9%)",
-        dark: "hsl(0 0% 98%)",
-      },
+      default: "hsl(var(--popover))",
+      foreground: "hsl(var(--popover-foreground))",
     },
     muted: {
-      default: {
-        light: "hsl(0 0% 96.1%)",
-        dark: "hsl(0 0% 14.9%)",
-      },
-      foreground: {
-        light: "hsl(0 0% 45.1%)",
-        dark: "hsl(0 0% 63.9%)",
-      },
+      default: "hsl(var(--muted))",
+      foreground: "hsl(var(--muted-foreground))",
     },
     accent: {
-      default: {
-        light: "hsl(0 0% 96.1%)",
-        dark: "hsl(0 0% 14.9%)",
-      },
-      foreground: {
-        light: "hsl(0 0% 9%)",
-        dark: "hsl(0 0% 98%)",
-      },
+      default: "hsl(var(--accent))",
+      foreground: "hsl(var(--accent-foreground))",
     },
     destructive: {
-      default: {
-        light: "hsl(0 84.2% 60.2%)",
-        dark: "hsl(0 62.8% 30.6%)",
-      },
-      foreground: {
-        light: "hsl(0 0% 98%)",
-        dark: "hsl(0 0% 98%)",
-      },
+      default: "hsl(var(--destructive))",
+      foreground: "hsl(var(--destructive-foreground))",
     },
   },
   config,

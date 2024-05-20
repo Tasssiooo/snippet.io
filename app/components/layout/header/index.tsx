@@ -27,9 +27,8 @@ export default function Header() {
         px="6"
         py="4"
         shadow={scroll > 0 ? "lg" : ""}
-        bgColor="background.light"
+        bgColor="background"
         transition="box-shadow 150ms ease-in-out"
-        _dark={{ bgColor: "background.dark" }}
       >
         <Logo />
         <Nav />

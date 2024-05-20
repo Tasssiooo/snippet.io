@@ -60,9 +60,8 @@ export default function MobileDrawer() {
                     borderBottom="1px"
                     borderColor="blackAlpha.400"
                     px="1"
-                    color={isExplore ? "" : "muted.foreground.light"}
+                    color={isExplore ? "" : "muted.foreground"}
                     _dark={{
-                      color: isExplore ? "" : "muted.foreground.dark",
                       borderColor: "whiteAlpha.700",
                     }}
                     variant="navlink"
@@ -77,9 +76,8 @@ export default function MobileDrawer() {
                     borderBottom="1px"
                     borderColor="blackAlpha.400"
                     px="1"
-                    color={isAbout ? "" : "muted.foreground.light"}
+                    color={isAbout ? "" : "muted.foreground"}
                     _dark={{
-                      color: isAbout ? "" : "muted.foreground.dark",
                       borderColor: "whiteAlpha.700",
                     }}
                     variant="navlink"
@@ -159,10 +157,9 @@ export default function MobileDrawer() {
                 justifyContent="space-between"
                 alignItems="center"
                 fontSize="sm"
-                bgColor="muted.default.light"
+                bgColor="muted.default"
                 fontWeight="600"
                 p="4"
-                _dark={{ bgColor: "muted.default.dark" }}
               >
                 <span>Appearance</span>
                 <Switch
@@ -175,12 +172,7 @@ export default function MobileDrawer() {
           </DrawerBody>
 
           <DrawerFooter mx="auto" mb="2">
-            <Text
-              fontSize="xs"
-              fontStyle="italic"
-              color="muted.foreground.light"
-              _dark={{ color: "muted.foreground.dark" }}
-            >
+            <Text fontSize="xs" fontStyle="italic" color="muted.foreground">
               Made with ❤️ by Tasssiooo
             </Text>
           </DrawerFooter>

@@ -10,10 +10,8 @@ const Link = defineStyleConfig({
       alignItems: "center",
       py: "3",
       w: "full",
-      color: "muted.foreground.light",
-      _dark: {
-        color: "muted.foreground.dark",
-      },
+      color: "muted.foreground",
+
       _hover: {
         color: "primary.700 !important",
       },
