@@ -2,6 +2,7 @@ import { Box, SkipNavContent } from "@chakra-ui/react";
 
 import Hero from "./sections/hero";
 import Customization from "./sections/customization";
+import ChooseYourLanguage from "./sections/choose-your-language";
 
 export default function HomeView() {
   return (
@@ -20,6 +21,7 @@ export default function HomeView() {
       {/* Sections */}
       <Hero />
       <Customization />
+      <ChooseYourLanguage />
     </Box>
   );
 }
