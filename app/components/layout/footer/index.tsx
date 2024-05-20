@@ -16,7 +16,7 @@ export default function Footer() {
       h="32"
       mx="auto"
       mt="16"
-      bgColor="primary.default"
+      bgColor="primary.900"
     >
       <Stack
         direction="column"
