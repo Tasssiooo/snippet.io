@@ -24,6 +24,7 @@ export default function Hero() {
       py="8"
       w="max-content"
       mx="auto"
+      px={{ base: "2", xl: "5" }}
       gridRowGap="7"
     >
       <GridItem display="flex" flexDir="column" justifyContent="center">

@@ -103,7 +103,13 @@ export default function ChooseYourLanguage() {
   }
 
   return (
-    <Flex as="section" flexDir="column" justifyContent="center" py="8">
+    <Flex
+      as="section"
+      flexDir="column"
+      justifyContent="center"
+      py="8"
+      px={{ base: "2", xl: "5" }}
+    >
       <Box
         textAlign="center"
         mx={{ md: "auto" }}
