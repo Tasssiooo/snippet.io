@@ -3,6 +3,7 @@ import { Box, SkipNavContent } from "@chakra-ui/react";
 import Hero from "./sections/hero";
 import Customization from "./sections/customization";
 import ChooseYourLanguage from "./sections/choose-your-language";
+import Share from "./sections/share";
 import GetStarted from "./sections/get-started";
 
 export default function HomeView() {
@@ -22,6 +23,7 @@ export default function HomeView() {
       <Hero />
       <Customization />
       <ChooseYourLanguage />
+      <Share />
       <GetStarted />
     </Box>
   );
