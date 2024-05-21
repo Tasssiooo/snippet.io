@@ -6,7 +6,7 @@ const Button = defineStyleConfig({
       bgColor: "primary.default",
       color: "primary.foreground",
       _hover: {
-        bgColor: "primary.800",
+        bgColor: "primary.450",
       },
     },
   },
