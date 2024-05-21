@@ -42,7 +42,7 @@ export default function MobileDrawer() {
       </Button>
       <Drawer isOpen={isOpen} placement="bottom" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent h="calc(100vh - 5rem)">
+        <DrawerContent h="calc(100vh - 72px)">
           <DrawerCloseButton />
           <DrawerBody w="full" maxW="sm" mx="auto">
             <Flex as="nav" my="4">

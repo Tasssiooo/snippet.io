@@ -17,7 +17,7 @@ export default function Header() {
   scrollYProgress.onChange((n) => setScroll(n));
 
   return (
-    <Box pos="fixed" top="0" left="0" w="full" zIndex="50">
+    <Box as="header" pos="fixed" top="0" left="0" w="full" zIndex="50">
       <Flex
         flexDir="row"
         alignItems="center"

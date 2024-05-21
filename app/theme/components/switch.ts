@@ -21,7 +21,7 @@ const Switch = helpers.defineMultiStyleConfig({
       },
       track: {
         _checked: {
-          bgColor: "primary.700",
+          bgColor: "primary.default",
         },
       },
     },
