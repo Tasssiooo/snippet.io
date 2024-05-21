@@ -21,7 +21,8 @@ export default function Hero() {
         lg: "repeat(2, max-content)",
       }}
       placeItems="center"
-      py="8"
+      pt="4"
+      pb="14"
       w="max-content"
       mx="auto"
       px={{ base: "2", xl: "5" }}

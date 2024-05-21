@@ -13,7 +13,7 @@ import rubycode from "~/assets/images/rubycode.png";
 
 export default function Customization() {
   return (
-    <Flex as="section" flexDir="column" justifyContent="center" py="8" px={{ base: "2", xl: "5" }}>
+    <Flex as="section" flexDir="column" justifyContent="center" py="14" px={{ base: "2", xl: "5" }}>
       <Box
         textAlign="center"
         mx={{ md: "auto" }}

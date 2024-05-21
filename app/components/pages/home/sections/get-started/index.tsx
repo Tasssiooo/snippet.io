@@ -12,6 +12,7 @@ export default function GetStarted() {
       bgImage={`url(${background})`}
       bgSize="cover"
       h="384px"
+      mt="14"
       px={{ base: "2", xl: "5" }}
       justifyContent="center"
       alignItems="center"

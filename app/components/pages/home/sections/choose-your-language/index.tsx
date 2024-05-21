@@ -107,7 +107,7 @@ export default function ChooseYourLanguage() {
       as="section"
       flexDir="column"
       justifyContent="center"
-      py="8"
+      py="14"
       px={{ base: "2", xl: "5" }}
     >
       <Box
