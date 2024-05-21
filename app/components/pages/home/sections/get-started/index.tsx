@@ -19,6 +19,7 @@ export default function GetStarted() {
     >
       <Box
         textAlign="center"
+        color="primary.foreground"
         mx={{ md: "auto" }}
         mb={{ base: "8", md: "12" }}
         maxW="3xl"
