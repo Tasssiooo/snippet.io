@@ -24,6 +24,7 @@ export default function Footer() {
         maxW="xl"
         mx="auto"
         alignItems="center"
+        color="primary.foreground"
       >
         <Flex
           flexDir="row"
