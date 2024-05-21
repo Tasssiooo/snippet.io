@@ -13,9 +13,10 @@ export default function Footer() {
       alignItems="center"
       w="full"
       maxW="8xl"
-      h="32"
+      minH="32"
       mx="auto"
       mt="16"
+      py="10"
       bgColor="primary.900"
     >
       <Stack
