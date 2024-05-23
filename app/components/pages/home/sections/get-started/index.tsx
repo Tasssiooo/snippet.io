@@ -33,7 +33,7 @@ export default function GetStarted() {
         </Text>
         <Button
           as={ReactRouterLink}
-          to="/auth/sign-up"
+          to="/auth/signup"
           bgColor="primary.700"
           mt="7"
         >
